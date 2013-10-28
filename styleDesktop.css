@@ -1,0 +1,104 @@
+body{
+	background-image:url('images/map-background.png');
+	background-size:1920px;
+}
+
+/*
+Header Stuff
+*/
+#companyInfo{
+	color:#ffffff;
+	float:right;
+	font-size: 28pt;
+	padding:2px 5px;
+	text-shadow:1px 1px #000000,-1px 1px #000000,1px -1px #000000,-1px -1px #000000;
+}
+#header{
+	background-image:url('images/red.png');
+	left:0px;
+	padding:0px;
+	position:fixed;
+	text-shadow:1px 1px #000000,-1px 1px #000000,1px -1px #000000,-1px -1px #000000;
+	top:0px;
+	width:100%;
+	z-index:+20;
+}
+#header a{
+	color:inherit;
+	text-decoration: none;
+}
+
+/*
+Navigation Stuff
+*/
+#menuButton{
+	display:none;
+}
+#nav{
+	float:left;
+}
+#nav a:hover{
+	color:#ffff00;
+}
+#nav li{
+	color:#ffffff;
+	padding: 2px 5px;
+	position:relative;
+	text-align:center;
+	width: 100px;
+}
+#nav>ul>li{
+	display:inline-block;
+}
+#nav li>ul{
+	background-image:url('images/red.png');
+	display:none;
+	position:absolute;
+	z-index: +11;
+}
+#nav li:hover>ul{
+	display:block;
+}
+#nav li>ul>li{
+	display:block;
+}
+#nav li>ul>li>ul{
+	left:110px;
+	top:0px;
+}
+
+/*
+Article Stuff
+*/
+#article>ul>li{
+	background-image:url('images/left-align.png');
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	background-size: 100px;
+	float:right;
+	padding:10px 60px 20px 0px;
+}
+#article>ul>li:nth-child(3n),#article>ul>li:nth-child(5n){
+	background-image:url('images/right-align.png');
+	background-position: bottom left;
+	float:left;
+	padding:10px 0px 20px 60px;
+}
+#article>ul>li:nth-child(7n-6){margin-left:0px;}
+#article>ul>li:nth-child(7n-5){margin-left:50px;}
+#article>ul>li:nth-child(7n-4){margin-left:100px;}
+#article>ul>li:nth-child(7n-3){margin-left:150px;}
+#article>ul>li:nth-child(7n-2){margin-left:200px;}
+#article>ul>li:nth-child(7n-1){margin-left:250px;}
+#article>ul>li:nth-child(7n){margin-left:300px;}
+
+#article>ul>li:nth-child(5n-4){margin-right:300px;}
+#article>ul>li:nth-child(5n-3){margin-right:225px;}
+#article>ul>li:nth-child(5n-2){margin-right:150px;}
+#article>ul>li:nth-child(5n-1){margin-right:75px;}
+#article>ul>li:nth-child(5n){margin-right:0px;}
+
+.indexSection{
+	max-width:400px;
+	min-width:200px;
+}
